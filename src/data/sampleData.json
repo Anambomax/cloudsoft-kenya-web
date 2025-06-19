@@ -1,0 +1,142 @@
+
+{
+  "company": {
+    "name": "CloudSoft Kenya",
+    "tagline": "Empowering Kenyan Businesses with Cutting-Edge Technology",
+    "phone": "+254 700 123 456",
+    "whatsapp": "+254 700 123 456",
+    "email": "info@cloudsoftkenya.com",
+    "address": "Westlands, Nairobi, Kenya"
+  },
+  "hero": {
+    "title": "Transform Your Business with Smart Technology Solutions",
+    "subtitle": "From AI automation to custom software development, we help Kenyan businesses thrive in the digital age",
+    "cta": "Get Started Today"
+  },
+  "services": [
+    {
+      "id": 1,
+      "title": "AI Solutions",
+      "icon": "briefcase",
+      "description": "Intelligent chatbots, data analysis, and automation tools to streamline your operations",
+      "features": ["Custom Chatbots", "Predictive Analytics", "Process Automation", "Machine Learning Models"]
+    },
+    {
+      "id": 2,
+      "title": "Software Development",
+      "icon": "briefcase",
+      "description": "Custom web, mobile, and desktop applications tailored to your business needs",
+      "features": ["Web Applications", "Mobile Apps", "Desktop Software", "API Development"]
+    },
+    {
+      "id": 3,
+      "title": "Website Development",
+      "icon": "home",
+      "description": "Professional websites that convert visitors into customers",
+      "features": ["Business Websites", "E-commerce Stores", "Portfolio Sites", "SEO Optimization"]
+    },
+    {
+      "id": 4,
+      "title": "Web Hosting Services",
+      "icon": "home",
+      "description": "Reliable, fast, and secure hosting solutions for your online presence",
+      "features": ["Shared Hosting", "VPS Hosting", "Email Hosting", "SSL Certificates"]
+    },
+    {
+      "id": 5,
+      "title": "System Administration",
+      "icon": "briefcase",
+      "description": "Expert Linux server management, security, and maintenance services",
+      "features": ["Server Setup", "Security Monitoring", "Automated Backups", "Performance Optimization"]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Wanjiku",
+      "company": "Nairobi Fashion House",
+      "text": "CloudSoft Kenya transformed our online presence. Our e-commerce site has increased sales by 300%!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "James Mwangi",
+      "company": "TechStart Kenya",
+      "text": "Their AI chatbot handles 80% of our customer queries. Amazing results and professional service.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Grace Akinyi",
+      "company": "Kisumu Logistics",
+      "text": "Fast, reliable hosting and excellent support. Our website has never been down since switching.",
+      "rating": 5
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform for Kenyan Artisans",
+      "description": "A comprehensive online marketplace connecting local artisans with global customers",
+      "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+      "category": "Web Development",
+      "technologies": ["React", "Node.js", "MongoDB"]
+    },
+    {
+      "id": 2,
+      "title": "AI-Powered Customer Service Bot",
+      "description": "Intelligent chatbot reducing customer service costs by 60% for a major telecom",
+      "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
+      "category": "AI Solutions",
+      "technologies": ["Python", "TensorFlow", "NLP"]
+    },
+    {
+      "id": 3,
+      "title": "Mobile Banking App",
+      "description": "Secure and user-friendly mobile banking solution for microfinance institutions",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+      "category": "Mobile Development",
+      "technologies": ["React Native", "Firebase", "Blockchain"]
+    }
+  ],
+  "team": [
+    {
+      "name": "David Kimani",
+      "role": "CEO & Lead Developer",
+      "bio": "10+ years experience in software development and tech leadership in Kenya"
+    },
+    {
+      "name": "Mary Otieno",
+      "role": "AI Specialist",
+      "bio": "Machine learning expert with focus on African market solutions"
+    },
+    {
+      "name": "Peter Ochieng",
+      "role": "Systems Administrator",
+      "bio": "Linux specialist ensuring robust and secure infrastructure"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "Why Kenyan SMEs Need AI Automation in 2024",
+      "excerpt": "Discover how artificial intelligence is transforming small businesses across Kenya and why you shouldn't be left behind.",
+      "date": "2024-01-15",
+      "category": "AI & Automation"
+    },
+    {
+      "id": 2,
+      "title": "Web Hosting Guide for Kenyan Businesses",
+      "excerpt": "Everything you need to know about choosing the right hosting solution for your business in Kenya.",
+      "date": "2024-01-10",
+      "category": "Web Hosting"
+    },
+    {
+      "id": 3,
+      "title": "Mobile-First Design: Essential for Kenyan Market",
+      "excerpt": "Why mobile-first design is crucial for success in Kenya's smartphone-dominant market.",
+      "date": "2024-01-05",
+      "category": "Web Development"
+    }
+  ]
+}
