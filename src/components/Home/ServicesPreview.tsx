@@ -1,27 +1,46 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, Home } from 'lucide-react';
-import sampleData from '@/data/sampleData.json';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { Bot, Code, Globe, Server, Shield } from 'lucide-react';
+
+const services = [
+  {
+    icon: Bot,
+    title: 'AI Solutions',
+    description: 'Smart chatbots, data analysis, and automation tools to streamline your business operations.',
+    features: ['Custom Chatbots', 'Data Analytics', 'Process Automation']
+  },
+  {
+    icon: Code,
+    title: 'Software Development',
+    description: 'Custom web, mobile, and desktop applications tailored to your business needs.',
+    features: ['Web Applications', 'Mobile Apps', 'Desktop Software']
+  },
+  {
+    icon: Globe,
+    title: 'Website Development',
+    description: 'Professional websites that convert visitors into customers and drive business growth.',
+    features: ['Business Websites', 'E-commerce', 'Portfolio Sites']
+  },
+  {
+    icon: Server,
+    title: 'Web Hosting',
+    description: 'Reliable hosting solutions with 99.9% uptime and 24/7 technical support.',
+    features: ['Shared Hosting', 'VPS Hosting', 'Email Services']
+  },
+  {
+    icon: Shield,
+    title: 'System Administration',
+    description: 'Complete server management, security monitoring, and backup solutions.',
+    features: ['Linux Servers', 'Security Monitoring', 'Automated Backups']
+  }
+];
 
 const ServicesPreview = () => {
-  const services = sampleData.services.slice(0, 3); // Show only first 3 services
-
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case 'briefcase':
-        return <Briefcase className="w-8 h-8" />;
-      case 'home':
-        return <Home className="w-8 h-8" />;
-      default:
-        return <Briefcase className="w-8 h-8" />;
-    }
-  };
-
   return (
-    <section className="py-20 bg-brand-light">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
@@ -32,25 +51,23 @@ const ServicesPreview = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {services.map((service) => (
-            <Card key={service.id} className="hover-lift border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <div className="w-16 h-16 bg-gradient-brand rounded-full flex items-center justify-center mx-auto mb-4 text-white">
-                  {getIcon(service.icon)}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {services.map((service, index) => (
+            <Card key={index} className="hover-lift border-0 shadow-lg">
+              <CardHeader>
+                <div className="w-12 h-12 bg-gradient-brand rounded-lg flex items-center justify-center mb-4">
+                  <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-xl font-bold text-brand-navy">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-brand-gray mb-4">
+                <CardTitle className="text-brand-navy">{service.title}</CardTitle>
+                <CardDescription className="text-brand-gray">
                   {service.description}
-                </Car
-
-Description>
-                <ul className="text-sm text-brand-gray space-y-1">
-                  {service.features.slice(0, 3).map((feature, index) => (
-                    <li key={index} className="flex items-center justify-center">
-                      <span className="w-2 h-2 bg-brand-orange rounded-full mr-2"></span>
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-sm text-brand-gray">
+                      <span className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></span>
                       {feature}
                     </li>
                   ))}
@@ -61,7 +78,7 @@ Description>
         </div>
 
         <div className="text-center">
-          <Button asChild size="lg" className="bg-brand-navy hover:bg-brand-navy/90 text-white">
+          <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-coral text-white">
             <Link to="/services">View All Services</Link>
           </Button>
         </div>
